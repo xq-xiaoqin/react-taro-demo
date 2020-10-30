@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from 'react'
 import { View } from '@tarojs/components'
-import { AtGrid, AtAvatar }  from 'taro-ui'
+import { AtGrid, AtIcon }  from 'taro-ui'
 import "taro-ui/dist/style/components/grid.scss";
 import "taro-ui/dist/style/components/icon.scss"
 import './more.less'
@@ -17,8 +17,9 @@ const More: FC<any> = props => {
       <AtGrid hasBorder={false} columnNum={4} data={
         [
             {
-              image: 'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+              // image: 'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
               value: '领取中心',
+              iconInfo: {value:'volume-minus', size:'18'}
             },
             {
               image: 'https://img20.360buyimg.com/jdphoto/s72x72_jfs/t15151/308/1012305375/2300/536ee6ef/5a411466N040a074b.png',

@@ -7,6 +7,7 @@ import './personalCenter.less'
 import TopInfo from './component/topInfo'
 import Order from './component/order'
 import More from './component/more'
+import Selection from './component/selection'
 
 const PersonalCenter: FC<any> = props => {
   const [current, setCurrent]= useState(0)
@@ -41,7 +42,9 @@ const PersonalCenter: FC<any> = props => {
       </View>
       <More />
       <View>coupon</View>
-      <View>Selection of recommended</View>
+      <View>
+        <Selection />
+      </View>
     </View>
   )
 }
